@@ -1,0 +1,15 @@
+ <DOCTYPE html>
+<html>
+    <head></head>
+        <body>
+            <h1>Hello there</h1>
+            <form action='/article/' method='GET'>
+                <input type ='text' name='query' />
+                <input type ='submit'/>
+            </form>
+            {% block content %}
+            <h3> this will be replaced</h3>
+            {% endblock content %}
+
+        </body>
+ </html>

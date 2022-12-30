@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for item in object %}
+    #{{forloop.counter}} - {{ item }}<br />
+{% empty %}
+  No result found
+{% endfor %}
+{% endblock content %}
